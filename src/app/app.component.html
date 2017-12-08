@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <h1>Making Ninja Gold with Angular!</h1>
+    <div class="row">
+        <div class="col-md-2">
+            <br>
+            <h3>Gold Count: </h3>
+            <h3 [ngStyle]="{'color': color}"> {{goldCount}}</h3>
+            <br>
+        </div>
+    </div>
+    <div class="row">
+        <app-location (myEvent)="dataFromChild($event)"></app-location>
+    </div>
+    <div class="row">
+        <app-result></app-result>
+    </div>
+</div>
